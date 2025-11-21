@@ -1,0 +1,69 @@
+<app-hero
+    image="assets/PlanesBanner.png"
+    title="Planes de Capacitación"
+    subtitle="Descubre tu potencial comunicativo"
+    [showButton]="false">
+  </app-hero>
+<section class="py-20 bg-white pt-32">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Título y Subtítulo -->
+    <h1 class="text-4xl md:text-5xl font-serif font-bold text-blue-900 mb-6 leading-tight">
+      Plan Institucional
+    </h1>
+    <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+      Diseñado para organizaciones que buscan fortalecer las habilidades comunicativas y el liderazgo inclusivo en sus equipos. Este plan se divide en dos fases de implementación estratégica.
+    </p>
+
+    <!-- TABLAS (DISPOSICIÓN EN 2 COLUMNAS) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      <!-- items-stretch asegura que ambas tarjetas tengan la misma altura -->
+
+      <!-- TABLA 1: FASE 1 - Diagnóstico Estratégico -->
+      <div class="flex flex-col h-full">
+        <h2 class="text-2xl font-serif font-semibold text-blue-800 mb-4 bg-yellow-50 p-3 rounded-t-lg">
+          Fase I: Diagnóstico y Capacitación
+        </h2>
+        <div class="bg-white rounded-b-lg shadow-xl overflow-hidden border border-gray-200 flex-grow">
+          <!-- Reemplaza src con la primera tabla del plan institucional -->
+          <img src="assets/Institucional1.png"
+               alt="Tabla de contenido Plan Institucional Fase I"
+               class="w-full h-full object-contain"> <!-- h-full y object-contain para igualar altura -->
+        </div>
+      </div>
+
+      <!-- TABLA 2: FASE 2 - Implementación y Seguimiento -->
+      <div class="flex flex-col h-full">
+        <h2 class="text-2xl font-serif font-semibold text-blue-800 mb-4 bg-yellow-50 p-3 rounded-t-lg">
+          Fase II: Implementación y Seguimiento
+        </h2>
+        <div class="bg-white rounded-b-lg shadow-xl overflow-hidden border border-gray-200 flex-grow">
+          <!-- Reemplaza src con la segunda tabla del plan institucional -->
+          <img src="assets/Institucional2.png"
+               alt="Tabla de contenido Plan Institucional Fase II"
+               class="w-full h-full object-contain"> <!-- h-full y object-contain para igualar altura -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SECCIÓN DE CONTACTO/CITA -->
+    <div class="mt-20 bg-blue-50 border-l-4 border-blue-800 p-6 rounded-r-lg max-w-lg mx-auto">
+      <p class="text-blue-900 italic font-medium text-lg">
+        "Las soluciones institucionales son personalizables. Contáctanos para un plan ajustado a tus metas corporativas."
+      </p>
+    </div>
+
+    <div class="mt-12">
+    <a routerLink="/cuestionario/institucional"
+       class="inline-block bg-blue-600 hover:bg-blue-700 hover: cursor-pointer text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 mr-4">
+        Acceder al Cuestionario
+    </a>
+    <a routerLink="/contacto"
+       class="inline-block bg-yellow-500 hover:bg-yellow-400 hover: cursor-pointer text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+        ¡Quiero reservar mi cupo!
+    </a>
+</div>
+
+  </div>
+</section>

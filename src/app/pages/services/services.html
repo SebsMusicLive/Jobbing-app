@@ -1,0 +1,125 @@
+<app-hero
+  *ngIf="isServicesRoot"
+  image="assets/ServiceBanner.png"
+  title="Servicios"
+  [showButton]="false">
+</app-hero>
+
+<div *ngIf="isServicesRoot">
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-blue-900 mb-8">
+        Lista de servicios
+      </h2>
+      <p class="text-lg text-gray-600 leading-relaxed text-justify md:text-center font-serif italic">
+        En JOBING creemos que cada persona tiene una forma única de expresarse, y cuando esa voz se entrena, se fortalece y se escucha, puede abrir caminos reales hacia la inclusión y el trabajo. Por eso, diseñamos experiencias formativas que no solo desarrollan habilidades comunicativas y digitales, sino que también empoderan.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20 pt-10 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <h3 class="text-3xl font-serif font-bold text-blue-900">Etapa de Diagnóstico y Fortalecimiento</h3>
+        <div class="w-16 h-1 bg-yellow-500 mx-auto mt-3 rounded"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+
+        <div class="flex flex-col group">
+          <div class="overflow-hidden rounded-lg shadow-lg mb-8 h-72">
+             <img src="assets/Service1.png" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" alt="Evaluación inicial">
+          </div>
+          <h3 class="text-2xl md:text-3xl font-serif font-bold text-blue-900 text-center mb-6">
+            Evaluación inicial
+          </h3>
+          <p class="text-gray-700 text-justify leading-relaxed px-2">
+            JOBING ofrece una evaluación inicial integral, incluye una entrevista inicial, un análisis de las habilidades comunicativas y sociales, y una valoración de las competencias básicas para el aprendizaje en marketing digital. Con base en estos resultados, se elabora un plan personalizado de intervención y formación, diseñado para potenciar las capacidades individuales y orientar su desarrollo hacia la inclusión laboral.
+          </p>
+        </div>
+
+        <div class="flex flex-col group">
+          <div class="overflow-hidden rounded-lg shadow-lg mb-8 h-72">
+            <img src="assets/Service2.png" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" alt="Entrenamiento">
+          </div>
+          <h3 class="text-2xl md:text-3xl font-serif font-bold text-blue-900 text-center mb-6">
+            Entrenamiento en habilidades comunicativas y sociales
+          </h3>
+          <p class="text-gray-700 text-justify leading-relaxed px-2">
+            JOBING ofrece un entrenamiento personalizado que integra fonoaudiología, psicología y formación en marketing digital, enfocado en la inclusión laboral. El proceso se lleva a cabo mediante sesiones individualizadas desde fonoaudiología y talleres grupales. Además, se realiza un seguimiento continuo para adaptar el aprendizaje a las necesidades individuales.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <h3 class="text-3xl font-serif font-bold text-blue-900">Habilidades y Práctica Laboral</h3>
+        <div class="w-16 h-1 bg-yellow-500 mx-auto mt-3 rounded"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+
+        <div class="flex flex-col group">
+          <div class="rounded-lg overflow-hidden shadow-lg mb-6 h-72">
+            <img src="assets/Service3.png" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" alt="Marketing Digital">
+          </div>
+          <h3 class="text-2xl font-serif font-bold text-blue-900 text-center mb-4">Formación en Marketing digital</h3>
+          <p class="text-gray-600 text-justify leading-relaxed px-4">
+            JOBING ofrece una etapa formativa enfocada en el desarrollo de competencias en marketing digital y pensamiento creativo. Incluye capacitaciones teóricas, proyectos prácticos y una evaluación de habilidades orientada al entorno laboral digital.
+          </p>
+        </div>
+
+        <div class="flex flex-col group">
+          <div class="rounded-lg overflow-hidden shadow-lg mb-6 h-72">
+            <img src="assets/Service4.png" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700" alt="Inclusión Laboral">
+          </div>
+          <h3 class="text-2xl font-serif font-bold text-blue-900 text-center mb-4">Práctica e inclusión laboral</h3>
+          <p class="text-gray-600 text-justify leading-relaxed px-4">
+            JOBING acompaña a sus participantes en la transición hacia el entorno laboral mediante una etapa de práctica que incluye simulaciones laborales y seguimiento post-inclusión, garantizando una integración efectiva y sostenible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white max-w-5xl mx-auto px-6 mb-20">
+
+    <div class="text-center mb-10">
+      <h3 class="text-3xl font-serif font-bold text-blue-900">Elige tu Plan</h3>
+      <div class="w-16 h-1 bg-yellow-500 mx-auto mt-3 rounded"></div>
+    </div>
+
+    <div *ngFor="let plan of plans" class="border-b border-gray-300 py-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <div class="flex items-center justify-between w-full md:w-auto gap-4">
+          <h3 class="text-xl md:text-2xl text-blue-800 font-serif cursor-pointer hover:text-blue-600 transition">
+            {{ plan.name }}
+          </h3>
+          <i class='bx bx-chevron-down text-gray-400 text-2xl md:hidden'></i>
+        </div>
+
+        <div class="flex items-center gap-4 w-full md:w-auto justify-end">
+          <a [routerLink]="plan.link" class="bg-blue-800 hover:bg-blue-700 text-white text-sm font-bold py-2 px-6 rounded shadow transition duration-300 uppercase tracking-wider">
+            CONTENIDO
+          </a>
+          <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center text-white shadow-md">
+            <span class="font-bold text-lg">T</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-gray-300 mt-[-1px]"></div>
+
+  </section>
+
+</div>
+
+<router-outlet></router-outlet>

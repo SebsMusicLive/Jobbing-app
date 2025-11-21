@@ -1,0 +1,27 @@
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+
+  <div class="absolute inset-0">
+    <img
+      [src]="image"
+      class="w-full h-full object-cover transform scale-105"
+      alt="Banner principal"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-900/60 to-black/70"></div>
+  </div>
+
+  <div class="relative z-10 text-center px-4 animate-fade-in-up">
+
+    <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight drop-shadow-2xl mb-6">
+      {{ title }}
+    </h1>
+
+    <p *ngIf="subtitle" class="text-xl md:text-2xl text-gray-200 font-serif italic mb-8">
+      {{ subtitle }}
+    </p>
+
+    <button *ngIf="showButton" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+      Conoce nuestros servicios
+    </button>
+
+  </div>
+</section>

@@ -1,0 +1,59 @@
+  <app-hero
+    image="assets/PlanesBanner.png"
+    title="Planes de Capacitación"
+    subtitle="Descubre tu potencial comunicativo"
+    [showButton]="false">
+  </app-hero>
+
+<section class="py-20 bg-white pt-32">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h1 class="text-4xl md:text-5xl font-serif font-bold text-blue-900 mb-6 leading-tight">
+      Plan Mensual
+    </h1>
+    <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+      El Plan Mensual ofrece una inmersión más profunda, dividida en dos módulos clave para una transformación constante y progresiva.
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      <div class="flex flex-col h-full">
+        <h2 class="text-2xl font-serif font-semibold text-blue-800 mb-4 bg-blue-50 p-3 rounded-t-lg">
+          Módulo 1: Comunicación Avanzada
+        </h2>
+        <div class="bg-white rounded-b-lg shadow-xl overflow-hidden border border-gray-200 flex-grow">
+          <img src="assets/Mensual1.jpg"
+               alt="Tabla de contenido Plan Mensual Módulo 1"
+               class="w-full h-full object-contain"> </div>
+      </div>
+
+      <div class="flex flex-col h-full">
+        <h2 class="text-2xl font-serif font-semibold text-blue-800 mb-4 bg-blue-50 p-3 rounded-t-lg">
+          Módulo 2: Estrategia Digital
+        </h2>
+        <div class="bg-white rounded-b-lg shadow-xl overflow-hidden border border-gray-200 flex-grow">
+          <img src="assets/Mensual2.jpg"
+               alt="Tabla de contenido Plan Mensual Módulo 2"
+               class="w-full h-full object-contain"> </div>
+      </div>
+
+    </div>
+
+    <div class="mt-20 bg-blue-50 border-l-4 border-blue-800 p-6 rounded-r-lg max-w-lg mx-auto">
+      <p class="text-blue-900 italic font-medium text-lg">
+        "El plan mensual garantiza que desarrolles habilidades comunicativas funcionales y digitales."
+      </p>
+    </div>
+
+    <div class="mt-12">
+    <a routerLink="/cuestionario/mensual"
+       class="inline-block bg-blue-600 hover:bg-blue-700 hover: cursor-pointer text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 mr-4">
+        Acceder al Cuestionario
+    </a>
+    <a routerLink="/contacto"
+       class="inline-block bg-yellow-500 hover:bg-yellow-400 hover: cursor-pointer text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+        ¡Quiero reservar mi cupo!
+    </a>
+</div>
+
+  </div>
+</section>
