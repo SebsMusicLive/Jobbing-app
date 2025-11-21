@@ -29,22 +29,21 @@
 
       <li><a routerLink="/seguimiento" routerLinkActive="text-yellow-400 font-bold" class="hover:text-yellow-400 transition-colors pb-1">Mi Progreso</a></li>
       <li><a routerLink="/contacto" routerLinkActive="text-yellow-400 border-b-2 border-yellow-400" class="hover:text-yellow-400 transition-colors pb-1">Contacto</a></li>
-
       <li routerLink="/pagos" class="bg-yellow-500 text-blue-900 px-5 py-2 rounded-full hover:bg-yellow-400 hover:scale-105 transition duration-300 cursor-pointer font-bold shadow-lg">
         Pagos
       </li>
     </ul>
 
     <button (click)="toggleMenu()" class="md:hidden text-white focus:outline-none z-50 p-2">
-      <i class='bx' [ngClass]="isMenuOpen ? 'bx-x' : 'bx-menu'" class="text-4xl"></i>
+      <i class='bi' [ngClass]="isMenuOpen ? 'bi-three-dots' : 'bi-three-dots-vertical'" class="text-4xl"></i>
     </button>
 
   </div>
 
   <div [ngClass]="isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'"
-       class="fixed inset-0 bg-blue-900 z-40 flex flex-col justify-center items-center transition-all duration-300 ease-in-out md:hidden h-screen w-screen">
+       class="fixed inset-0 bg-blue-900 z-40 flex flex-col justify-center items-center transition-all duration-300 ease-in-out md:hidden h-screen w-screen overflow-y-auto">
 
-    <ul class="flex flex-col space-y-6 text-center font-medium text-xl text-white w-full px-8">
+    <ul class="flex flex-col space-y-6 text-center font-medium text-xl text-white w-full px-8 py-8">
 
       <li class="border-b border-blue-800 pb-2 w-full">
         <a routerLink="/" (click)="closeMenu()" class="block hover:text-yellow-400">Inicio</a>
@@ -57,11 +56,11 @@
       <li class="w-full">
         <span class="text-yellow-400 font-bold text-lg block mb-3">Nuestros Servicios</span>
         <div class="grid grid-cols-2 gap-3 text-base text-blue-100">
-           <a routerLink="/servicios/semanal" (click)="closeMenu()" class="bg-blue-800 p-2 rounded hover:bg-blue-700">Semanal</a>
-           <a routerLink="/servicios/mensual" (click)="closeMenu()" class="bg-blue-800 p-2 rounded hover:bg-blue-700">Mensual</a>
-           <a routerLink="/servicios/trimestral" (click)="closeMenu()" class="bg-blue-800 p-2 rounded hover:bg-blue-700">Trimestral</a>
-           <a routerLink="/servicios/anual" (click)="closeMenu()" class="bg-blue-800 p-2 rounded hover:bg-blue-700">Anual</a>
-           <a routerLink="/servicios/institucional" (click)="closeMenu()" class="bg-blue-800 p-2 rounded col-span-2 hover:bg-blue-700">Institucional</a>
+           <a routerLink="/servicios/semanal" (click)="closeMenu()" class="bg-blue-800 p-3 rounded hover:bg-blue-700 border border-blue-700">Semanal</a>
+           <a routerLink="/servicios/mensual" (click)="closeMenu()" class="bg-blue-800 p-3 rounded hover:bg-blue-700 border border-blue-700">Mensual</a>
+           <a routerLink="/servicios/trimestral" (click)="closeMenu()" class="bg-blue-800 p-3 rounded hover:bg-blue-700 border border-blue-700">Trimestral</a>
+           <a routerLink="/servicios/anual" (click)="closeMenu()" class="bg-blue-800 p-3 rounded hover:bg-blue-700 border border-blue-700">Anual</a>
+           <a routerLink="/servicios/institucional" (click)="closeMenu()" class="bg-blue-800 p-3 rounded col-span-2 hover:bg-blue-700 border border-blue-700">Institucional</a>
         </div>
       </li>
 
@@ -74,8 +73,8 @@
       </li>
 
       <li class="pt-4">
-        <a routerLink="/pagos" (click)="closeMenu()" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full text-lg font-bold shadow-lg inline-block">
-          Zona de Pagos
+        <a routerLink="/pagos" (click)="closeMenu()" class="bg-yellow-500 text-blue-900 px-8 py-3 rounded-full text-lg font-bold shadow-lg inline-block w-full">
+          PAGOS
         </a>
       </li>
 
