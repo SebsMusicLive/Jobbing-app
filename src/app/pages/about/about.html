@@ -1,7 +1,8 @@
 <app-hero
   image="assets/AboutBanner.jpg"
   title="Acerca de nosotros"
-  [showButton]="false"> </app-hero>
+  [showButton]="false">
+</app-hero>
 
 <section class="py-20 bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -121,10 +122,31 @@
       <div class="w-24 h-1.5 bg-yellow-500 mx-auto mt-6 rounded-full"></div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="flex justify-center mb-16 relative z-10">
+      <div class="group relative w-full max-w-sm">
+
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-blue-900 font-bold px-8 py-2 rounded-full shadow-xl z-20 uppercase tracking-wider text-sm border-2 border-white">
+          Líder del Proyecto
+        </div>
+
+        <div class="relative overflow-hidden rounded-2xl shadow-2xl aspect-[3/4] ring-8 ring-blue-50 ring-offset-0 group-hover:ring-yellow-100 transition-all duration-500">
+           <img src="assets/PerfilLider.jpg"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+                alt="Paula Valentina Gómez Parra">
+
+           <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-transparent to-transparent opacity-90"></div>
+
+           <div class="absolute bottom-0 left-0 w-full p-6 text-center">
+              <h3 class="text-2xl font-bold text-white mb-1">Paula Valentina Gómez Parra</h3>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-gray-100 pt-12">
 
       <div class="group">
-        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4">
+        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4 grayscale group-hover:grayscale-0 transition duration-500">
           <img src="assets/Perfil1.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Jhoana Andrea Pelufo">
         </div>
         <div class="text-center">
@@ -133,7 +155,7 @@
       </div>
 
       <div class="group">
-        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4">
+        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4 grayscale group-hover:grayscale-0 transition duration-500">
           <img src="assets/Perfil2.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Dayana Nicol Arenas">
         </div>
         <div class="text-center">
@@ -142,7 +164,7 @@
       </div>
 
       <div class="group">
-        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4">
+        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4 grayscale group-hover:grayscale-0 transition duration-500">
           <img src="assets/Perfil3.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Jimer Julian Quistial">
         </div>
         <div class="text-center">
@@ -151,7 +173,7 @@
       </div>
 
       <div class="group">
-        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4">
+        <div class="relative overflow-hidden rounded-xl shadow-lg aspect-[3/4] mb-4 grayscale group-hover:grayscale-0 transition duration-500">
           <img src="assets/Perfil4.png" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Karen Julieth Merchan">
         </div>
         <div class="text-center">

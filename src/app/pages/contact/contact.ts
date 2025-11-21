@@ -8,7 +8,7 @@ import { Facebook } from "../../icons/facebook/facebook";
 
 @Component({
   selector: 'app-contact',
-  imports: [Hero, Whatsapp, Outlook, Instagram, Twitter, Facebook],
+  imports: [Hero, Whatsapp, Outlook],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })
