@@ -10,10 +10,21 @@ import { RouterModule } from '@angular/router';
 })
 export class Header {
   scrolled = false;
+  isMenuOpen = false; // <--- Variable para controlar el menú móvil
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.scrolled = window.scrollY > 100; // Cuando baja más de 50px
+  }
+
+  // Función para abrir/cerrar el menú
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  // Función para cerrar el menú cuando se hace clic en un enlace
+  closeMenu() {
+    this.isMenuOpen = false;
   }
 
 }

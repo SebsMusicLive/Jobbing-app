@@ -1,98 +1,108 @@
-<nav [ngClass]="scrolled ? 'bg-blue-900 shadow-md py-2' : 'bg-transparent py-4'"
+<nav [ngClass]="scrolled ? 'bg-blue-900 shadow-md py-2' : 'bg-blue-900 md:bg-transparent py-4'"
      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out">
 
   <div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-white">
 
-    <div class="flex items-center space-x-3 cursor-pointer">
+    <div class="flex items-center space-x-3 cursor-pointer" routerLink="/">
       <img src="assets/logo.webp" class="h-10 w-10 object-contain" alt="logo JOBING">
       <span class="font-bold text-xl tracking-wide">JOBING</span>
     </div>
 
-    <ul class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider items-center"> <li>
-        <a routerLink="/"
-           routerLinkActive="text-yellow-400 border-b-2 border-yellow-400"
-           [routerLinkActiveOptions]="{exact: true}"
-           class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
-           Inicio
-        </a>
-      </li>
-
+    <ul class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider items-center">
       <li>
-        <a routerLink="/quienes-somos"
-           routerLinkActive="text-yellow-400 border-b-2 border-yellow-400"
-           class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
-           Quiénes somos
+        <a routerLink="/" routerLinkActive="text-yellow-400 border-b-2 border-yellow-400" [routerLinkActiveOptions]="{exact: true}" class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a routerLink="/quienes-somos" routerLinkActive="text-yellow-400 border-b-2 border-yellow-400" class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
+          Quiénes somos
         </a>
       </li>
 
-      <li class="relative group"> <a routerLink="/servicios"
-           routerLinkActive="text-yellow-400"
-           class="flex items-center gap-1 hover:text-yellow-400 transition-colors duration-200 pb-1 cursor-pointer">
-           Servicios
-           <i class='bx bx-chevron-down text-xl transition-transform group-hover:rotate-180'></i>
+      <li class="relative group">
+        <a routerLink="/servicios" routerLinkActive="text-yellow-400" class="flex items-center gap-1 hover:text-yellow-400 transition-colors duration-200 pb-1 cursor-pointer">
+          Servicios
+          <i class='bx bx-chevron-down text-xl transition-transform group-hover:rotate-180'></i>
         </a>
-
         <div class="absolute top-full left-0 pt-4 w-56 hidden group-hover:block hover:block">
           <ul class="bg-gray-900 rounded-lg shadow-xl border-t-4 border-yellow-500 overflow-hidden text-left">
-
-            <li>
-              <a routerLink="/servicios/semanal" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">
-                Plan semanal
-              </a>
-            </li>
-
-            <li>
-              <a routerLink="/servicios/mensual" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">
-                Plan mensual
-              </a>
-            </li>
-
-            <li>
-              <a routerLink="/servicios/trimestral" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">
-                Plan trimestral
-              </a>
-            </li>
-
-            <li>
-              <a routerLink="/servicios/anual" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">
-                Plan anual
-              </a>
-            </li>
-
-            <li>
-              <a routerLink="/servicios/institucional" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 text-sm">
-                Plan institucional
-              </a>
-            </li>
-
+            <li><a routerLink="/servicios/semanal" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">Plan semanal</a></li>
+            <li><a routerLink="/servicios/mensual" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">Plan mensual</a></li>
+            <li><a routerLink="/servicios/trimestral" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">Plan trimestral</a></li>
+            <li><a routerLink="/servicios/anual" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-sm">Plan anual</a></li>
+            <li><a routerLink="/servicios/institucional" class="block px-4 py-3 text-white hover:bg-blue-800 hover:text-yellow-400 transition duration-200 text-sm">Plan institucional</a></li>
           </ul>
         </div>
       </li>
+
       <li>
-  <a routerLink="/seguimiento"
-     routerLinkActive="text-yellow-400 font-bold"
-     class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
-     Mi Progreso
-  </a>
-</li>
+        <a routerLink="/seguimiento" routerLinkActive="text-yellow-400 font-bold" class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
+          Mi Progreso
+        </a>
+      </li>
       <li>
-        <a routerLink="/contacto"
-           routerLinkActive="text-yellow-400 border-b-2 border-yellow-400"
-           class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
-           Contacto
+        <a routerLink="/contacto" routerLinkActive="text-yellow-400 border-b-2 border-yellow-400" class="hover:text-yellow-400 transition-colors duration-200 pb-1 block">
+          Contacto
+        </a>
+      </li>
+      <li routerLink="/pagos" class="bg-yellow-500 text-blue-900 px-4 py-1 rounded-full hover:bg-yellow-400 transition duration-300 cursor-pointer font-bold">
+        Pagos
+      </li>
+    </ul>
+
+    <button (click)="toggleMenu()" class="md:hidden text-white focus:outline-none z-50 relative">
+      <i class='bx' [ngClass]="isMenuOpen ? 'bx-x' : 'bx-menu'" class="text-4xl transition-all duration-300"></i>
+    </button>
+
+  </div>
+
+  <div [ngClass]="isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'"
+       class="fixed inset-0 bg-blue-900 bg-opacity-95 backdrop-blur-sm z-40 flex flex-col justify-center items-center transition-all duration-300 ease-in-out md:hidden">
+
+    <ul class="flex flex-col space-y-6 text-center font-medium text-lg uppercase tracking-wider text-white">
+
+      <li>
+        <a routerLink="/" (click)="closeMenu()" class="hover:text-yellow-400 transition-colors duration-200 block">
+          Inicio
         </a>
       </li>
 
-      <li routerLink="/pagos"
-         class="bg-yellow-500 text-blue-900 px-4 py-1 rounded-full hover:bg-yellow-400 transition duration-300 cursor-pointer font-bold">
-         Pagos
+      <li>
+        <a routerLink="/quienes-somos" (click)="closeMenu()" class="hover:text-yellow-400 transition-colors duration-200 block">
+          Quiénes somos
+        </a>
+      </li>
+
+      <li>
+        <span class="text-yellow-500 font-bold block mb-2">Servicios</span>
+        <ul class="flex flex-col space-y-3 text-base font-normal text-gray-300">
+          <li><a routerLink="/servicios/semanal" (click)="closeMenu()" class="hover:text-white">Semanal</a></li>
+          <li><a routerLink="/servicios/mensual" (click)="closeMenu()" class="hover:text-white">Mensual</a></li>
+          <li><a routerLink="/servicios/trimestral" (click)="closeMenu()" class="hover:text-white">Trimestral</a></li>
+          <li><a routerLink="/servicios/anual" (click)="closeMenu()" class="hover:text-white">Anual</a></li>
+          <li><a routerLink="/servicios/institucional" (click)="closeMenu()" class="hover:text-white">Institucional</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a routerLink="/seguimiento" (click)="closeMenu()" class="hover:text-yellow-400 transition-colors duration-200 block font-bold">
+          Mi Progreso
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/contacto" (click)="closeMenu()" class="hover:text-yellow-400 transition-colors duration-200 block">
+          Contacto
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/pagos" (click)="closeMenu()" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-full hover:bg-yellow-400 transition duration-300 inline-block font-bold mt-4">
+          Pagos
+        </a>
       </li>
 
     </ul>
-
-    <button class="md:hidden text-white focus:outline-none">
-      <i class="bx bx-menu text-4xl"></i>
-    </button>
-
   </div>
 </nav>
