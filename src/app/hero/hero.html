@@ -15,13 +15,16 @@
       {{ title }}
     </h1>
 
-    <p *ngIf="subtitle" class="text-xl md:text-2xl text-gray-200 font-serif italic mb-8">
+    <p *ngIf="subtitle" class="text-xl md:text-2xl text-gray-200 font-serif italic mb-10">
       {{ subtitle }}
     </p>
 
-    <button *ngIf="showButton" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
-      Conoce nuestros servicios
-    </button>
+    <a
+      *ngIf="showButton"
+      [routerLink]="buttonLink"
+      class="inline-block bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold text-lg py-4 px-10 rounded-full shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-yellow-500/20 cursor-pointer">
+      {{ buttonText }}
+    </a>
 
   </div>
 </section>

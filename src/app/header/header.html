@@ -13,17 +13,21 @@
       <li><a routerLink="/quienes-somos" routerLinkActive="text-yellow-400 border-b-2 border-yellow-400" class="hover:text-yellow-400 transition-colors pb-1">Quiénes somos</a></li>
 
       <li class="relative group h-full flex items-center">
-        <a routerLink="/servicios" routerLinkActive="text-yellow-400" class="flex items-center gap-1 hover:text-yellow-400 cursor-pointer">
+
+        <a routerLink="/servicios" routerLinkActive="text-yellow-400" class="flex items-center gap-1 hover:text-yellow-400 cursor-pointer h-full">
           Servicios <i class='bx bx-chevron-down text-lg'></i>
         </a>
-        <div class="absolute top-full left-0 mt-2 w-56 hidden group-hover:block hover:block pt-2">
+
+        <div class="absolute top-full left-0 w-56 hidden group-hover:block hover:block pt-4">
+
           <ul class="bg-blue-900 rounded-lg shadow-xl border border-blue-700 overflow-hidden">
-            <li><a routerLink="/servicios/semanal" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800">Plan Semanal</a></li>
-            <li><a routerLink="/servicios/mensual" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800">Plan Mensual</a></li>
-            <li><a routerLink="/servicios/trimestral" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800">Plan Trimestral</a></li>
-            <li><a routerLink="/servicios/anual" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800">Plan Anual</a></li>
-            <li><a routerLink="/servicios/institucional" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm">Plan Institucional</a></li>
+            <li><a routerLink="/servicios/semanal" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800 transition-colors">Plan Semanal</a></li>
+            <li><a routerLink="/servicios/mensual" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800 transition-colors">Plan Mensual</a></li>
+            <li><a routerLink="/servicios/trimestral" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800 transition-colors">Plan Trimestral</a></li>
+            <li><a routerLink="/servicios/anual" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm border-b border-blue-800 transition-colors">Plan Anual</a></li>
+            <li><a routerLink="/servicios/institucional" class="block px-4 py-3 hover:bg-blue-800 hover:text-yellow-400 text-sm transition-colors">Plan Institucional</a></li>
           </ul>
+
         </div>
       </li>
 
